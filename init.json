@@ -1,0 +1,38 @@
+{
+	"api": "https://api.woozu.in/EMASF312egw",
+	"defaultProperties": {},
+	"screens": [
+		"Loading", "MainActivity"
+	],
+	"layouts": {
+		"MainActivity": {
+			"type": "view",
+			"components": [{
+				"type": "text",
+				"value": "${prop.value}",
+				"location": "0, 0",
+				"onclick": {
+					"action": "move",
+					"data": "/",
+					"target": "View"
+				}
+			}, {
+				"type": "image",
+				"src": "https://naver.com/login_v2/login_v2_20200228.png",
+				"location": "center,center-25%",
+				"onclick": {
+					"action": "link",
+					"data": "https://naver.com",
+					"target": "_blank"
+				}
+			}],
+			"css": "color:#ddadfe;",
+			"onload": "json:/getMainActivity"
+		},
+		"Alert": {
+			"type": "alert",
+			"components": [],
+			"css": "color:#ddadfe;"
+		}
+	}
+}
