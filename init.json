@@ -4,6 +4,11 @@
 	"screens": [
 		"Loading", "MainActivity"
 	],
+	"component": {
+		"toast" : {
+			"title" : "@title"
+		}
+	},
 	"layouts": {
 		"MainActivity": {
 			"type": "view",
